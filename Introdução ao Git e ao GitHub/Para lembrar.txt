@@ -1,0 +1,37 @@
+Link para download ao Git: https://git-scm.com/
+O Git Bash é um terminal extendido para otimizar o uso do Git. 
+
+Quando estamos lidando com um terminal, usamos sempre o nome do programa na frente para executar ações:
+   _Ex.: git nome do comando a executar_
+
+Ao acessar o Git pela primeira vez é necessário realizar a configuração de quem
+estará utilizando para que seja possivel a identificação correta ao fazer um COMMIT:
+   git config --global user.name 
+   git config --global user.email "seuemail@seuemail.com"
+
+Pastas iniciadas com . são pastas ocultas: 
+  _Ex.: .git (pasta que identifica que o repósitorio foi criado)_
+
+Dentro do Git os arquivos são classificados da seguinte forma:
+  _Untraked_ = arquivos que o Git ainda não tem ciencia de sua existencia;
+  _Traked_ = arquivos que o Git tem ciencia de sua existencia;
+  _Unmodified_ = aquivos que ainda não sofreram modificações (obs.: arquivos unmodified se forem deletados voltam a ser untraked);
+  _Modified_ = arquivos unmodified que sofreram alterações;
+  _Staged_ = arquivos que estão em preparação para fazer parte de outros agrupamentos (lembrar analogia Backstage).
+
+##Comandos para lembrar
+   mkdir nome da pasta* = cria repositórios
+   cd nome da pasta = acessa pasta especifica
+   cd .. = volta a pasta anterior
+   crtl+l = limpa terminal
+   ls = listar pastas
+   ls -a = listar pastas ocultas
+   dir = listar pastas
+   git init = criar/iniciar um repositorio para que possamos versionar/gerenciar o código
+   git edge = move diretamente um arquivo untraked para staged
+   git status = lista todos arquivos novos ou modificados sem commit
+   git add = mover arquivos para proximo estagio possibilitando o COMMIT para envio ao GitHub
+   git commit -m "escrever a mensagem" = criar o COMMIT para envio ao GitHub
+   git push = envia arquivo COMMIT para o GitHub
+   git clone colar_endereço_copiado = puxa para o terminal arquivos do GitHub
+
